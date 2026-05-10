@@ -10,8 +10,9 @@
  * - All users see the same cached content
  */
 
-// Use the server-side API URL (not the client proxy)
-const API_URL = process.env.API_URL || 'http://localhost:5000';
+// Use the server-side API URL. On Netlify, process.env.URL is the site URL
+// and the /api/* redirect routes requests to the Express serverless function.
+const API_URL = process.env.API_URL || process.env.URL || 'http://localhost:5000';
 
 // Revalidate every hour (3600 seconds)
 // Set to 0 for development to always fetch fresh data

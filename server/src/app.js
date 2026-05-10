@@ -94,29 +94,31 @@ app.use(errorHandler);
 
 const PORT = env.PORT;
 
-const server = app.listen(PORT, () => {
-    logger.info(`Server running in ${env.NODE_ENV} mode on port ${PORT}`);
-});
-
-// Graceful Shutdown
-process.on('SIGTERM', () => {
-    logger.info('SIGTERM received. Shutting down gracefully');
-    server.close(() => {
-        logger.info('Process terminated');
-        const { closeDB } = require('./config/database');
-        closeDB();
-        process.exit(0);
+// Only start the HTTP server when run directly (not as a serverless module)
+if (require.main === module) {
+    const server = app.listen(PORT, () => {
+        logger.info(`Server running in ${env.NODE_ENV} mode on port ${PORT}`);
     });
-});
 
-process.on('SIGINT', () => {
-    logger.info('SIGINT received. Shutting down gracefully');
-    server.close(() => {
-        logger.info('Process terminated');
-        const { closeDB } = require('./config/database');
-        closeDB();
-        process.exit(0);
+    process.on('SIGTERM', () => {
+        logger.info('SIGTERM received. Shutting down gracefully');
+        server.close(() => {
+            logger.info('Process terminated');
+            const { closeDB } = require('./config/database');
+            closeDB();
+            process.exit(0);
+        });
     });
-});
+
+    process.on('SIGINT', () => {
+        logger.info('SIGINT received. Shutting down gracefully');
+        server.close(() => {
+            logger.info('Process terminated');
+            const { closeDB } = require('./config/database');
+            closeDB();
+            process.exit(0);
+        });
+    });
+}
 
 module.exports = app;

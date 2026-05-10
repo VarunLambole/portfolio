@@ -1,0 +1,20 @@
+[build]
+  command = "npm install && cd server && npm install && cd ../client && npm install && npm run build"
+  publish = "client/.next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "nft"
+
+[functions."api"]
+  included_files = ["server/**/*"]
+
+# Route all /api/* requests to the Express serverless function
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api"
+  status = 200
+  force = true
