@@ -1,0 +1,14 @@
+[build]
+  # Tell Netlify that the Next.js app lives in the client folder
+  base = "client"
+  
+  # The command to build the Next.js application
+  command = "npm run build"
+  
+  # Next.js output directory (Netlify usually auto-detects this, but it's safe to include)
+  publish = ".next"
+
+# The Next.js plugin is automatically loaded by Netlify, 
+# but this ensures full compatibility with the App Router and ISR
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

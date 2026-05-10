@@ -9,6 +9,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)](https://typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb)](https://mongodb.com/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/68c6cf56-cb91-43de-9538-ecccd6997d33/deploy-status)](https://app.netlify.com/projects/varunlambole/deploys)
 
 <br />
 
