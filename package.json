@@ -6,6 +6,9 @@
         "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
         "start": "concurrently \"npm run start --prefix server\" \"npm run start --prefix client\""
     },
+    "dependencies": {
+        "serverless-http": "^3.2.0"
+    },
     "devDependencies": {
         "concurrently": "^8.2.2"
     }

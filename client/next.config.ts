@@ -43,7 +43,9 @@ const nextConfig: NextConfig = {
 
   // Rewrites to proxy API requests (hide backend URL from browser)
   async rewrites() {
-    const apiUrl = process.env.API_URL || 'http://localhost:5000';
+    // On Netlify, process.env.URL is the deployed site URL; the CDN redirect
+    // rule handles /api/* -> serverless function before Next.js rewrites apply.
+    const apiUrl = process.env.API_URL || process.env.URL || 'http://localhost:5000';
     return [
       {
         source: '/api/:path*',

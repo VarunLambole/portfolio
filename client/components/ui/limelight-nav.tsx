@@ -6,7 +6,7 @@ import React, { useState, useEffect, useRef, useLayoutEffect, cloneElement } fro
 
 type NavItem = {
   id: string | number
-  icon: React.ReactElement
+  icon: React.ReactElement<{ className?: string }>
   label?: string
   onClick?: () => void
 }
