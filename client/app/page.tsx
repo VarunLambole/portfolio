@@ -1,13 +1,10 @@
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
-import { Navbar } from "@/components/navbar"
 import { ShaderAnimation } from "@/components/shader-hero"
 import { About } from "@/components/about"
 import { CursorEffect } from "@/components/cursor-effect"
 import { ScrollProgress } from "@/components/ui/scroll-progress"
-import { ThemeToggle } from "@/components/theme-toggle"
-import { FloatingDock } from "@/components/ui/floating-dock"
-import { Home as HomeIcon, User, Briefcase, Zap, GitFork, Award, BookOpen, Mail } from "lucide-react"
+import { Navbar } from "@/components/navbar"
 import { getAllPortfolioData } from "@/lib/data"
 
 // Lazy load below-fold components for faster initial load
@@ -59,7 +56,7 @@ function SectionSkeleton() {
 
 /**
  * Homepage - Server Component with ISR
- * 
+ *
  * All portfolio data is fetched at build time and revalidated hourly.
  * This ensures instant page loads without any backend dependency at runtime.
  */
@@ -67,24 +64,10 @@ export default async function Home() {
   // Fetch all data at build time (ISR enabled - revalidates hourly)
   const { heroData, experiences, projects, blogs, certificates } = await getAllPortfolioData();
 
-  const navItems = [
-    { title: "Home", icon: <HomeIcon className="h-full w-full text-neutral-500 dark:text-neutral-300" />, href: "#hero" },
-    { title: "About", icon: <User className="h-full w-full text-neutral-500 dark:text-neutral-300" />, href: "#about" },
-    { title: "Skills", icon: <Zap className="h-full w-full text-neutral-500 dark:text-neutral-300" />, href: "#skills" },
-    { title: "Experience", icon: <Briefcase className="h-full w-full text-neutral-500 dark:text-neutral-300" />, href: "#experience" },
-    { title: "Projects", icon: <GitFork className="h-full w-full text-neutral-500 dark:text-neutral-300" />, href: "#projects" },
-    { title: "Blogs", icon: <BookOpen className="h-full w-full text-neutral-500 dark:text-neutral-300" />, href: "#blogs" },
-    { title: "Certificates", icon: <Award className="h-full w-full text-neutral-500 dark:text-neutral-300" />, href: "#certificates" },
-    { title: "Contact", icon: <Mail className="h-full w-full text-neutral-500 dark:text-neutral-300" />, href: "#contact" },
-  ]
-
   return (
     <main className="min-h-screen bg-white dark:bg-black text-zinc-900 dark:text-zinc-100 selection:bg-[#6366F1]/30 dark:selection:bg-[#818CF8]/30 selection:text-zinc-900 dark:selection:text-white overflow-x-hidden cursor-none transition-colors duration-700">
       <ScrollProgress />
       <CursorEffect />
-      <div className="fixed top-4 right-4 z-50">
-        <ThemeToggle />
-      </div>
 
       {/* Critical above-fold content - loaded immediately */}
       <section id="hero">
@@ -132,9 +115,7 @@ export default async function Home() {
         </section>
       </Suspense>
 
-      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
-        <FloatingDock items={navItems} />
-      </div>
+      <Navbar />
     </main>
   )
 }

@@ -15,12 +15,12 @@ const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100", "200
 const _sourceSerif_4 = V0_Font_Source_Serif_4({ subsets: ['latin'], weight: ["200", "300", "400", "500", "600", "700", "800", "900"], variable: '--font-source-serif-4' })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://govindrajkotalwar.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://varunlambole.dev'),
   title: {
-    default: "Govindraj Kotalwar | AI Engineer & Data Scientist",
-    template: "%s | Govindraj Kotalwar"
+    default: "Varun Lambole | Web Developer & UI/UX Designer",
+    template: "%s | Varun Lambole"
   },
-  description: "Portfolio of Govindraj Kotalwar - AI Engineer & Data Science Professional specializing in Machine Learning, Deep Learning, and Full Stack Development.",
+  description: "Portfolio of Varun Lambole - Full Stack Web Developer specializing in the MERN stack, crafting responsive and intuitive web experiences.",
   generator: "Next.js",
   icons: {
     icon: [
@@ -40,20 +40,20 @@ export const metadata: Metadata = {
     apple: "/apple-icon.png",
   },
   // SEO enhancements
-  keywords: ["AI Engineer", "Machine Learning", "Full Stack Developer", "Portfolio", "Govindraj Kotalwar", "Data Scientist", "Deep Learning", "Python", "PyTorch"],
-  authors: [{ name: "Govindraj Kotalwar" }],
-  creator: "Govindraj Kotalwar",
+  keywords: ["Web Developer", "MERN Stack", "Full Stack Developer", "Portfolio", "Varun Lambole", "React", "Node.js", "UI/UX Designer", "MongoDB", "Express"],
+  authors: [{ name: "Varun Lambole" }],
+  creator: "Varun Lambole",
   openGraph: {
-    title: "Govindraj Kotalwar | AI Engineer & Data Scientist",
-    description: "Portfolio of Govindraj Kotalwar - AI Engineer & Data Science Professional specializing in Machine Learning, Deep Learning, and Full Stack Development.",
+    title: "Varun Lambole | Web Developer & UI/UX Designer",
+    description: "Portfolio of Varun Lambole - Full Stack Web Developer specializing in the MERN stack, crafting responsive and intuitive web experiences.",
     type: "website",
     locale: "en_US",
-    siteName: "Govindraj Kotalwar Portfolio",
+    siteName: "Varun Lambole Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Govindraj Kotalwar | AI Engineer",
-    description: "Portfolio of Govindraj Kotalwar - AI Engineer & Data Science Professional",
+    title: "Varun Lambole | Web Developer",
+    description: "Portfolio of Varun Lambole - Full Stack MERN Developer & UI/UX Designer",
   },
   robots: {
     index: true,

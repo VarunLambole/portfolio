@@ -3,11 +3,11 @@ import { getCertificates, getHeroData } from "@/lib/data"
 import { CertificatesPageClient } from "./certificates-page-client"
 
 export const metadata: Metadata = {
-    title: "Certifications | Govindraj Kotalwar",
-    description: "Professional certifications and credentials in AI, machine learning, and cloud technologies.",
+    title: "Certifications | Varun Lambole",
+    description: "Professional certifications and credentials in web development, frontend, and full-stack technologies.",
     openGraph: {
-        title: "Certifications | Govindraj Kotalwar",
-        description: "Professional certifications and credentials in AI, machine learning, and cloud technologies.",
+        title: "Certifications | Varun Lambole",
+        description: "Professional certifications and credentials in web development, frontend, and full-stack technologies.",
         type: "website",
     },
 }

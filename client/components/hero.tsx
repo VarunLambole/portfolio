@@ -78,7 +78,7 @@ export function Hero() {
           className="text-6xl md:text-9xl font-bold tracking-tighter mb-6"
         >
           <span className="block bg-clip-text text-transparent bg-gradient-to-b from-zinc-900 via-zinc-700 to-zinc-500 dark:from-white dark:via-zinc-200 dark:to-zinc-500">
-            Govindraj
+            Varun
           </span>
           <motion.span
             className="block bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 dark:from-blue-400 dark:via-purple-400 dark:to-cyan-400"
@@ -94,7 +94,7 @@ export function Hero() {
               backgroundSize: "200% auto",
             }}
           >
-            Kotalwar
+            Lambole
           </motion.span>
         </motion.h1>
 
@@ -105,7 +105,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto font-medium"
         >
-          AI Engineer & Data Science Specialist
+          Web Developer & MERN Stack Specialist
         </motion.p>
       </motion.div>
 

@@ -12,9 +12,9 @@ interface FooterProps {
 
 // Default values used when no data is provided
 const defaultFooterData = {
-  email: "govindraj@example.com",
+  email: "varunlambole@example.com",
   socialLinks: {
-    github: "https://github.com",
+    github: "https://github.com/VarunLambole",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
     website: "",
@@ -248,7 +248,7 @@ export function Footer({ footerData }: FooterProps) {
             </h2>
 
             <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-xl mx-auto mb-12">
-              I&apos;m always excited to collaborate on innovative AI projects and bring ideas to life.
+              I&apos;m always excited to collaborate on web projects and bring your ideas to life with clean code and great design.
             </p>
 
             {/* Spotlight CTA Button */}
@@ -373,7 +373,7 @@ export function Footer({ footerData }: FooterProps) {
           transition={{ delay: 0.6 }}
         >
           <p className="text-sm text-zinc-500">
-            © 2025 Govindraj Kotalwar. All rights reserved.
+            © 2025 Varun Lambole. All rights reserved.
           </p>
           <p className="text-sm text-zinc-500">
             Crafted with <span className="text-[#6366F1]">♥</span> and caffeine

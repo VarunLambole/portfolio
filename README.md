@@ -12,7 +12,7 @@
 
 <br />
 
-**[🌐 Live Demo](https://govindraj-kotalwar.vercel.app/)** · **[📖 Documentation](#-getting-started)** · **[🐛 Report Bug](https://github.com/Starbuster2004/Portfolio/issues)**
+**[🌐 Live Demo](https://varunlambole.dev/)** · **[📖 Documentation](#-getting-started)** · **[🐛 Report Bug](https://github.com/VarunLambole/portfolio/issues)**
 
 </div>
 
@@ -63,9 +63,9 @@ Built with **Incremental Static Regeneration (ISR)**, the site loads **instantly
 <td width="33%" valign="top">
 
 ### 🎨 Creative UI/UX
-- **WebGL Shaders** - Stunning hero animations
+- **WebGL Mosaic Shaders** - Stunning pixelated wave hero animations
 - **Framer Motion** - Buttery smooth transitions
-- **Magnetic Buttons** - Interactive micro-effects
+- **Limelight Navigation** - Interactive spotlight nav bar
 - **Custom Cursor** - Unique browsing experience
 - **Dark/Light Mode** - System-aware theming
 
@@ -107,7 +107,7 @@ All content is managed through the admin dashboard and reflected on the site via
 | **Projects** | Portfolio projects with images, GitHub links, tech tags |
 | **Blogs** | Blog posts with rich content and tags |
 | **Certificates** | Professional certifications with images |
-| **Skills** | Technology icons displayed in 3D sphere |
+| **Skills** | Technology icons displayed in staggered grid |
 
 ---
 
@@ -164,8 +164,8 @@ All content is managed through the admin dashboard and reflected on the site via
 
 ```bash
 # Clone the repository
-git clone https://github.com/Starbuster2004/Portfolio.git
-cd Portfolio
+git clone https://github.com/VarunLambole/portfolio.git
+cd portfolio
 
 # Install all dependencies
 npm install          # Root package.json
@@ -287,7 +287,7 @@ Portfolio/
 
 All public pages are **statically generated** at build time:
 
-```
+```mermaid
 flowchart LR
     A[Admin Updates Content] --> B[Backend API]
     B --> C{Revalidation Trigger}
@@ -304,7 +304,7 @@ flowchart LR
 |-----------|-------------|
 | `ShaderAnimation` | `heroTitle`, `heroSubtitle` |
 | `About` | `aboutTitle`, `aboutSubtitle`, `aboutDescription` |
-| `BentoGrid` | `skills[]` |
+| `BentoGrid` (Skills) | `skills[]` |
 | `Experience` | `experiences[]` |
 | `GithubProjects` | `projects[]` |
 | `BlogsPapers` | `blogs[]` |
@@ -321,7 +321,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 <div align="center">
 
-**Built with ❤️ and ☕ by [Govindraj Kotalwar](https://github.com/Starbuster2004)**
+**Built with ❤️ and ☕ by [Varun Lambole](https://github.com/VarunLambole)**
 
 ⭐ Star this repo if you find it useful!
 

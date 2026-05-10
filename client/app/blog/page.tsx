@@ -3,11 +3,11 @@ import { getBlogs } from "@/lib/data"
 import { BlogPageClient } from "./blog-page-client"
 
 export const metadata: Metadata = {
-    title: "Blog | Govindraj Kotalwar",
-    description: "Thoughts and insights on AI, machine learning, and software engineering.",
+    title: "Blog | Varun Lambole",
+    description: "Thoughts and insights on web development, MERN stack, and UI/UX design.",
     openGraph: {
-        title: "Blog | Govindraj Kotalwar",
-        description: "Thoughts and insights on AI, machine learning, and software engineering.",
+        title: "Blog | Varun Lambole",
+        description: "Thoughts and insights on web development, MERN stack, and UI/UX design.",
         type: "website",
     },
 }

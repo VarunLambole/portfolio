@@ -87,14 +87,14 @@ export interface Experience {
 // ==========================================
 
 const fallbackHeroData: HeroData = {
-    heroTitle: "Govindraj Kotalwar",
-    heroSubtitle: "AI Engineer • Full Stack Developer",
+    heroTitle: "Varun Lambole",
+    heroSubtitle: "Web Developer • UI/UX Designer",
     aboutTitle: "// About Me",
-    aboutSubtitle: "I build intelligent systems that bridge the gap between data and human experience.",
-    aboutDescription: "As an AI Engineer and Data Scientist, I interpret complex datasets to solve real-world problems. My passion lies in creating machine learning models that are not just accurate, but also interpretable and actionable.\n\nWith a strong foundation in both software engineering and statistical modeling, I approach every project with a holistic view—ensuring that the backend logic is as robust as the frontend is intuitive.\n\nI'm constantly exploring the bleeding edge of AI, from Large Language Models to Computer Vision. I believe the best solutions come from a deep understanding of the problem space combined with the right technological tools.\n\nWhen I'm not coding, you can find me analyzing market trends, contributing to open-source projects, or exploring the latest developments in generative AI.",
-    email: "govindraj@example.com",
+    aboutSubtitle: "I craft seamless digital experiences — from robust backends to polished, pixel-perfect interfaces.",
+    aboutDescription: "I'm a full-stack web developer well-versed in the MERN stack (MongoDB, Express.js, React, Node.js). I love building products that are as solid under the hood as they are beautiful on the surface.\n\nMy journey spans both frontend and backend development — designing intuitive UI/UX flows with React and then powering them with scalable Node.js APIs and MongoDB databases.\n\nI have hands-on internship experience working with real-world clients and teams, which has sharpened my ability to deliver production-ready solutions on time.\n\nWhen I'm not building apps, I'm exploring new frontend frameworks, contributing to open-source projects, or leveling up my design skills.",
+    email: "varunlambole@example.com",
     socialLinks: {
-        github: "https://github.com",
+        github: "https://github.com/VarunLambole",
         linkedin: "https://linkedin.com",
         twitter: "https://twitter.com",
         website: "",
@@ -105,30 +105,21 @@ const fallbackHeroData: HeroData = {
 const fallbackExperiences: Experience[] = [
     {
         _id: "1",
-        company: "Innovate AI Labs",
-        role: "Senior AI Engineer",
-        period: "2023 - Present",
-        description: "Leading the development of Generative AI agents and LLM-based applications. Architecting scalable RAG pipelines and deploying models to production using Docker and Kubernetes.",
-        tags: ["LLMs", "Python", "PyTorch", "FastAPI"],
+        company: "Neotechking Global Solutions Private Limited",
+        role: "Web Development Intern",
+        period: "Jan 2026 – Jun 2026",
+        description: "Working as a Web Development intern, contributing to full-stack features using the MERN stack. Involved in building RESTful APIs with Node.js and Express, designing responsive React UIs, and integrating MongoDB databases for client-facing web applications.",
+        tags: ["React", "Node.js", "Express", "MongoDB", "MERN"],
         order: 0,
     },
     {
         _id: "2",
-        company: "DataWorks Solutions",
-        role: "Data Scientist",
-        period: "2021 - 2023",
-        description: "Developed predictive models for customer churn and demand forecasting. Optimized machine learning workflows and reduced inference latency by 40%.",
-        tags: ["Scikit-learn", "TensorFlow", "SQL", "AWS"],
+        company: "Sphurti WebApp Pvt Ltd",
+        role: "Frontend Developer Intern",
+        period: "Feb 2025 – Jul 2025",
+        description: "6-month frontend internship focused on building and optimizing responsive web interfaces. Worked with modern frontend technologies to deliver pixel-perfect, accessible, and performant UI components for production web applications.",
+        tags: ["HTML", "CSS", "JavaScript", "React", "UI/UX"],
         order: 1,
-    },
-    {
-        _id: "3",
-        company: "TechStar Intern",
-        role: "Machine Learning Intern",
-        period: "2020 - 2021",
-        description: "Assisted in building computer vision models for automated quality control involved in data preprocessing, annotation, and model training.",
-        tags: ["OpenCV", "Keras", "Python"],
-        order: 2,
     },
 ];
 

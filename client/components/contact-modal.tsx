@@ -159,7 +159,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 <div className="py-12 flex flex-col items-center justify-center text-center">
                   <Loader2 className="w-12 h-12 text-blue-500 animate-spin mb-4" />
                   <h4 className="text-xl font-medium text-zinc-900 dark:text-white">Encrypting Data...</h4>
-                  <p className="text-zinc-500 mt-2">Establishing secure uplink to Govindraj's server.</p>
+                  <p className="text-zinc-500 mt-2">Establishing secure uplink to Varun's server.</p>
                 </div>
               )}
 
